@@ -49,7 +49,7 @@ public class Calculator {
 	* from the total variable. 
 	*/ 
 	public void subtract (int value) {
-		total = total + value;
+		total = value - total;
 		history = "-" + value;
 	}
 	
@@ -60,7 +60,7 @@ public class Calculator {
 	* to the total variable. 
 	*/ 
 	public void multiply (int value) {
-		total = total + value;
+		total = total * value;
 		history = "*" + value;
 	}
 	
@@ -71,11 +71,11 @@ public class Calculator {
 	* will be divided by 
 	*/ 
 	public void divide (int value) {
-		//total = total + value;
+		//total = total / value;
 		if(value==0){
 			total=0;
 		}else{
-			total = total + value;
+			total = total / value;
 		}
 		history = "/" + value;
 	}
